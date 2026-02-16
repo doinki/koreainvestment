@@ -1,0 +1,22 @@
+{
+  "name": "koreainvestment",
+  "version": "0.0.0",
+  "license": "MIT",
+  "engines": {
+    "node": ">= 24"
+  },
+  "packageManager": "pnpm@10.29.3",
+  "type": "module",
+  "scripts": {
+    "build": "tsc --include src",
+    "generate:docs": "tsx scripts/generate-docs.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@types/node": "^24.10.13",
+    "cheerio": "^1.2.0",
+    "prettier": "^3.8.1",
+    "tsx": "^4.21.0",
+    "typescript": "^5.9.3"
+  }
+}
