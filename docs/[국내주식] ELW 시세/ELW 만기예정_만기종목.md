@@ -63,30 +63,30 @@ ELW 만기예정/만기종목 API입니다.
 
 ### Body
 
-| Element           | 한글명               | Type         | Required | Length | Description |
-| ----------------- | -------------------- | ------------ | -------- | ------ | ----------- |
-| rt_cd             | 성공 실패 여부       | String       | Y        | 1      |             |
-| msg_cd            | 응답코드             | String       | Y        | 8      |             |
-| msg1              | 응답메세지           | String       | Y        | 80     |             |
-| output1           | 응답상세             | Object Array | Y        |        | array       |
-| elw_shrn_iscd     | ELW단축종목코드      | String       | Y        | 9      |             |
-| elw_kor_isnm      | ELW한글종목명        | String       | Y        | 40     |             |
-| unas_isnm         | 기초자산종목명       | String       | Y        | 40     |             |
-| unas_prpr         | 기초자산현재가       | String       | Y        | 112    |             |
-| acpr              | 행사가               | String       | Y        | 112    |             |
-| stck_cnvr_rate    | 주식전환비율         | String       | Y        | 136    |             |
-| elw_prpr          | ELW현재가            | String       | Y        | 10     |             |
-| stck_lstn_date    | 주식상장일자         | String       | Y        | 8      |             |
-| stck_last_tr_date | 주식최종거래일자     | String       | Y        | 8      |             |
-| total_rdmp_amt    | 총상환금액           | String       | Y        | 18     |             |
-| rdmp_amt          | 상환금액             | String       | Y        | 186    |             |
-| lstn_stcn         | 상장주수             | String       | Y        | 18     |             |
-| lp_hvol           | LP보유량             | String       | Y        | 18     |             |
-| ccls_paym_prc     | 확정지급2가격        | String       | Y        | 223    |             |
-| mtrt_vltn_amt     | 만기평가금액         | String       | Y        | 192    |             |
-| evnt_prd_fin_date | 행사2기간종료일자    | String       | Y        | 8      |             |
-| stlm_date         | 결제일자             | String       | Y        | 8      |             |
-| pblc_prc          | 발행가격             | String       | Y        | 18     |             |
-| unas_shrn_iscd    | 기초자산단축종목코드 | String       | Y        | 9      |             |
-| stnd_iscd         | 표준종목코드         | String       | Y        | 12     |             |
-| rdmp_ask_amt      | 상환청구금액         | String       | Y        | 18     |             |
+| Element                   | 한글명               | Type         | Required | Length | Description |
+| ------------------------- | -------------------- | ------------ | -------- | ------ | ----------- |
+| rt_cd                     | 성공 실패 여부       | String       | Y        | 1      |             |
+| msg_cd                    | 응답코드             | String       | Y        | 8      |             |
+| msg1                      | 응답메세지           | String       | Y        | 80     |             |
+| output1                   | 응답상세             | Object Array | Y        |        | array       |
+| output1.elw_shrn_iscd     | ELW단축종목코드      | String       | Y        | 9      |             |
+| output1.elw_kor_isnm      | ELW한글종목명        | String       | Y        | 40     |             |
+| output1.unas_isnm         | 기초자산종목명       | String       | Y        | 40     |             |
+| output1.unas_prpr         | 기초자산현재가       | String       | Y        | 112    |             |
+| output1.acpr              | 행사가               | String       | Y        | 112    |             |
+| output1.stck_cnvr_rate    | 주식전환비율         | String       | Y        | 136    |             |
+| output1.elw_prpr          | ELW현재가            | String       | Y        | 10     |             |
+| output1.stck_lstn_date    | 주식상장일자         | String       | Y        | 8      |             |
+| output1.stck_last_tr_date | 주식최종거래일자     | String       | Y        | 8      |             |
+| output1.total_rdmp_amt    | 총상환금액           | String       | Y        | 18     |             |
+| output1.rdmp_amt          | 상환금액             | String       | Y        | 186    |             |
+| output1.lstn_stcn         | 상장주수             | String       | Y        | 18     |             |
+| output1.lp_hvol           | LP보유량             | String       | Y        | 18     |             |
+| output1.ccls_paym_prc     | 확정지급2가격        | String       | Y        | 223    |             |
+| output1.mtrt_vltn_amt     | 만기평가금액         | String       | Y        | 192    |             |
+| output1.evnt_prd_fin_date | 행사2기간종료일자    | String       | Y        | 8      |             |
+| output1.stlm_date         | 결제일자             | String       | Y        | 8      |             |
+| output1.pblc_prc          | 발행가격             | String       | Y        | 18     |             |
+| output1.unas_shrn_iscd    | 기초자산단축종목코드 | String       | Y        | 9      |             |
+| output1.stnd_iscd         | 표준종목코드         | String       | Y        | 12     |             |
+| output1.rdmp_ask_amt      | 상환청구금액         | String       | Y        | 18     |             |

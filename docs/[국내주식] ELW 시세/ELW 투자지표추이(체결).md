@@ -53,21 +53,21 @@ ELW 투자지표추이(체결) API입니다.
 
 ### Body
 
-| Element        | 한글명         | Type         | Required | Length | Description |
-| -------------- | -------------- | ------------ | -------- | ------ | ----------- |
-| rt_cd          | 성공 실패 여부 | String       | Y        | 1      |             |
-| msg_cd         | 응답코드       | String       | Y        | 8      |             |
-| msg1           | 응답메세지     | String       | Y        | 80     |             |
-| output         | 응답상세       | Object Array | Y        |        | array       |
-| stck_cntg_hour | 주식체결시간   | String       | Y        | 6      |             |
-| elw_prpr       | ELW현재가      | String       | Y        | 10     |             |
-| prdy_vrss_sign | 전일대비부호   | String       | Y        | 1      |             |
-| prdy_vrss      | 전일대비       | String       | Y        | 10     |             |
-| prdy_ctrt      | 전일대비율     | String       | Y        | 82     |             |
-| acml_vol       | 누적거래량     | String       | Y        | 18     |             |
-| lvrg_val       | 레버리지값     | String       | Y        | 114    |             |
-| gear           | 기어링         | String       | Y        | 84     |             |
-| tmvl_val       | 시간가치값     | String       | Y        | 132    |             |
-| invl_val       | 내재가치값     | String       | Y        | 132    |             |
-| prit           | 패리티         | String       | Y        | 112    |             |
-| apprch_rate    | 접근도         | String       | Y        | 112    |             |
+| Element               | 한글명         | Type         | Required | Length | Description |
+| --------------------- | -------------- | ------------ | -------- | ------ | ----------- |
+| rt_cd                 | 성공 실패 여부 | String       | Y        | 1      |             |
+| msg_cd                | 응답코드       | String       | Y        | 8      |             |
+| msg1                  | 응답메세지     | String       | Y        | 80     |             |
+| output                | 응답상세       | Object Array | Y        |        | array       |
+| output.stck_cntg_hour | 주식체결시간   | String       | Y        | 6      |             |
+| output.elw_prpr       | ELW현재가      | String       | Y        | 10     |             |
+| output.prdy_vrss_sign | 전일대비부호   | String       | Y        | 1      |             |
+| output.prdy_vrss      | 전일대비       | String       | Y        | 10     |             |
+| output.prdy_ctrt      | 전일대비율     | String       | Y        | 82     |             |
+| output.acml_vol       | 누적거래량     | String       | Y        | 18     |             |
+| output.lvrg_val       | 레버리지값     | String       | Y        | 114    |             |
+| output.gear           | 기어링         | String       | Y        | 84     |             |
+| output.tmvl_val       | 시간가치값     | String       | Y        | 132    |             |
+| output.invl_val       | 내재가치값     | String       | Y        | 132    |             |
+| output.prit           | 패리티         | String       | Y        | 112    |             |
+| output.apprch_rate    | 접근도         | String       | Y        | 112    |             |

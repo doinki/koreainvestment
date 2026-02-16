@@ -53,39 +53,39 @@ ELW LP매매추이 API입니다.
 
 ### Body
 
-| Element           | 한글명               | Type         | Required | Length | Description |
-| ----------------- | -------------------- | ------------ | -------- | ------ | ----------- |
-| rt_cd             | 성공 실패 여부       | String       | Y        | 1      |             |
-| msg_cd            | 응답코드             | String       | Y        | 8      |             |
-| msg1              | 응답메세지           | String       | Y        | 80     |             |
-| output1           | 응답상세             | Object       | Y        |        |             |
-| elw_prpr          | ELW현재가            | String       | Y        | 10     |             |
-| prdy_vrss_sign    | 전일대비부호         | String       | Y        | 1      |             |
-| prdy_vrss         | 전일대비             | String       | Y        | 10     |             |
-| prdy_ctrt         | 전일대비율           | String       | Y        | 82     |             |
-| acml_vol          | 누적거래량           | String       | Y        | 18     |             |
-| prdy_vol          | 전일거래량           | String       | Y        | 18     |             |
-| stck_cnvr_rate    | 주식전환비율         | String       | Y        | 136    |             |
-| prit              | 패리티               | String       | Y        | 112    |             |
-| lvrg_val          | 레버리지값           | String       | Y        | 114    |             |
-| gear              | 기어링               | String       | Y        | 84     |             |
-| prls_qryr_rate    | 손익분기비율         | String       | Y        | 84     |             |
-| cfp               | 자본지지점           | String       | Y        | 112    |             |
-| invl_val          | 내재가치값           | String       | Y        | 132    |             |
-| tmvl_val          | 시간가치값           | String       | Y        | 132    |             |
-| acpr              | 행사가               | String       | Y        | 112    |             |
-| elw_ko_barrier    | 조기종료발생기준가격 | String       | Y        | 112    |             |
-| output2           | 응답상세             | Object Array | Y        |        | array       |
-| stck_bsop_date    | 주식영업일자         | String       | Y        | 8      |             |
-| elw_prpr          | ELW현재가            | String       | Y        | 10     |             |
-| prdy_vrss_sign    | 전일대비부호         | String       | Y        | 1      |             |
-| prdy_vrss         | 전일대비             | String       | Y        | 10     |             |
-| prdy_ctrt         | 전일대비율           | String       | Y        | 82     |             |
-| lp_seln_qty       | LP매도수량           | String       | Y        | 19     |             |
-| lp_seln_avrg_unpr | LP매도평균단가       | String       | Y        | 19     |             |
-| lp_shnu_qty       | LP매수수량           | String       | Y        | 19     |             |
-| lp_shnu_avrg_unpr | LP매수평균단가       | String       | Y        | 19     |             |
-| lp_hvol           | LP보유량             | String       | Y        | 18     |             |
-| lp_hldn_rate      | LP보유비율           | String       | Y        | 84     |             |
-| prsn_deal_qty     | 개인매매수량         | String       | Y        | 19     |             |
-| apprch_rate       | 접근도               | String       | Y        | 112    |             |
+| Element                   | 한글명               | Type         | Required | Length | Description |
+| ------------------------- | -------------------- | ------------ | -------- | ------ | ----------- |
+| rt_cd                     | 성공 실패 여부       | String       | Y        | 1      |             |
+| msg_cd                    | 응답코드             | String       | Y        | 8      |             |
+| msg1                      | 응답메세지           | String       | Y        | 80     |             |
+| output1                   | 응답상세             | Object       | Y        |        |             |
+| output1.elw_prpr          | ELW현재가            | String       | Y        | 10     |             |
+| output1.prdy_vrss_sign    | 전일대비부호         | String       | Y        | 1      |             |
+| output1.prdy_vrss         | 전일대비             | String       | Y        | 10     |             |
+| output1.prdy_ctrt         | 전일대비율           | String       | Y        | 82     |             |
+| output1.acml_vol          | 누적거래량           | String       | Y        | 18     |             |
+| output1.prdy_vol          | 전일거래량           | String       | Y        | 18     |             |
+| output1.stck_cnvr_rate    | 주식전환비율         | String       | Y        | 136    |             |
+| output1.prit              | 패리티               | String       | Y        | 112    |             |
+| output1.lvrg_val          | 레버리지값           | String       | Y        | 114    |             |
+| output1.gear              | 기어링               | String       | Y        | 84     |             |
+| output1.prls_qryr_rate    | 손익분기비율         | String       | Y        | 84     |             |
+| output1.cfp               | 자본지지점           | String       | Y        | 112    |             |
+| output1.invl_val          | 내재가치값           | String       | Y        | 132    |             |
+| output1.tmvl_val          | 시간가치값           | String       | Y        | 132    |             |
+| output1.acpr              | 행사가               | String       | Y        | 112    |             |
+| output1.elw_ko_barrier    | 조기종료발생기준가격 | String       | Y        | 112    |             |
+| output2                   | 응답상세             | Object Array | Y        |        | array       |
+| output2.stck_bsop_date    | 주식영업일자         | String       | Y        | 8      |             |
+| output2.elw_prpr          | ELW현재가            | String       | Y        | 10     |             |
+| output2.prdy_vrss_sign    | 전일대비부호         | String       | Y        | 1      |             |
+| output2.prdy_vrss         | 전일대비             | String       | Y        | 10     |             |
+| output2.prdy_ctrt         | 전일대비율           | String       | Y        | 82     |             |
+| output2.lp_seln_qty       | LP매도수량           | String       | Y        | 19     |             |
+| output2.lp_seln_avrg_unpr | LP매도평균단가       | String       | Y        | 19     |             |
+| output2.lp_shnu_qty       | LP매수수량           | String       | Y        | 19     |             |
+| output2.lp_shnu_avrg_unpr | LP매수평균단가       | String       | Y        | 19     |             |
+| output2.lp_hvol           | LP보유량             | String       | Y        | 18     |             |
+| output2.lp_hldn_rate      | LP보유비율           | String       | Y        | 84     |             |
+| output2.prsn_deal_qty     | 개인매매수량         | String       | Y        | 19     |             |
+| output2.apprch_rate       | 접근도               | String       | Y        | 112    |             |

@@ -55,17 +55,17 @@ ELW 변동성 추이(분별) API입니다.
 
 ### Body
 
-| Element        | 한글명          | Type         | Required | Length | Description |
-| -------------- | --------------- | ------------ | -------- | ------ | ----------- |
-| rt_cd          | 성공 실패 여부  | String       | Y        | 1      |             |
-| msg_cd         | 응답코드        | String       | Y        | 8      |             |
-| msg1           | 응답메세지      | String       | Y        | 80     |             |
-| output         | 응답상세        | Object Array | Y        |        | array       |
-| stck_bsop_date | 주식 영업 일자  | String       | Y        | 6      |             |
-| stck_cntg_hour | 주식 체결 시간  | String       | Y        | 10     |             |
-| stck_prpr      | 주식 현재가     | String       | Y        | 10     |             |
-| elw_oprc       | ELW 시가2       | String       | Y        | 1      |             |
-| elw_hgpr       | ELW 최고가      | String       | Y        | 82     |             |
-| elw_lwpr       | ELW 최저가      | String       | Y        | 10     |             |
-| hts_ints_vltl  | HTS 내재 변동성 | String       | Y        | 10     |             |
-| hist_vltl      | 역사적 변동성   | String       | Y        | 18     |             |
+| Element               | 한글명          | Type         | Required | Length | Description |
+| --------------------- | --------------- | ------------ | -------- | ------ | ----------- |
+| rt_cd                 | 성공 실패 여부  | String       | Y        | 1      |             |
+| msg_cd                | 응답코드        | String       | Y        | 8      |             |
+| msg1                  | 응답메세지      | String       | Y        | 80     |             |
+| output                | 응답상세        | Object Array | Y        |        | array       |
+| output.stck_bsop_date | 주식 영업 일자  | String       | Y        | 6      |             |
+| output.stck_cntg_hour | 주식 체결 시간  | String       | Y        | 10     |             |
+| output.stck_prpr      | 주식 현재가     | String       | Y        | 10     |             |
+| output.elw_oprc       | ELW 시가2       | String       | Y        | 1      |             |
+| output.elw_hgpr       | ELW 최고가      | String       | Y        | 82     |             |
+| output.elw_lwpr       | ELW 최저가      | String       | Y        | 10     |             |
+| output.hts_ints_vltl  | HTS 내재 변동성 | String       | Y        | 10     |             |
+| output.hist_vltl      | 역사적 변동성   | String       | Y        | 18     |             |

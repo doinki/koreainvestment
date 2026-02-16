@@ -53,68 +53,68 @@ ETF/ETN 현재가 API입니다.
 
 ### Body
 
-| Element                     | 한글명                       | Type   | Required | Length | Description                                               |
-| --------------------------- | ---------------------------- | ------ | -------- | ------ | --------------------------------------------------------- |
-| rt_cd                       | 성공 실패 여부               | String | Y        | 1      |                                                           |
-| msg_cd                      | 응답코드                     | String | Y        | 8      |                                                           |
-| msg1                        | 응답메세지                   | String | Y        | 80     |                                                           |
-| output                      | 응답상세                     | Object | Y        |        |                                                           |
-| stck_prpr                   | 주식 현재가                  | String | Y        | 10     |                                                           |
-| prdy_vrss_sign              | 전일 대비 부호               | String | Y        | 1      |                                                           |
-| prdy_vrss                   | 전일 대비                    | String | Y        | 10     |                                                           |
-| prdy_ctrt                   | 전일 대비율                  | String | Y        | 82     |                                                           |
-| acml_vol                    | 누적 거래량                  | String | Y        | 18     |                                                           |
-| prdy_vol                    | 전일 거래량                  | String | Y        | 18     |                                                           |
-| stck_mxpr                   | 주식 상한가                  | String | Y        | 10     |                                                           |
-| stck_llam                   | 주식 하한가                  | String | Y        | 10     |                                                           |
-| stck_prdy_clpr              | 주식 전일 종가               | String | Y        | 10     |                                                           |
-| stck_oprc                   | 주식 시가2                   | String | Y        | 10     |                                                           |
-| prdy_clpr_vrss_oprc_rate    | 전일 종가 대비 시가2 비율    | String | Y        | 84     |                                                           |
-| stck_hgpr                   | 주식 최고가                  | String | Y        | 10     |                                                           |
-| prdy_clpr_vrss_hgpr_rate    | 전일 종가 대비 최고가 비율   | String | Y        | 84     |                                                           |
-| stck_lwpr                   | 주식 최저가                  | String | Y        | 10     |                                                           |
-| prdy_clpr_vrss_lwpr_rate    | 전일 종가 대비 최저가 비율   | String | Y        | 84     |                                                           |
-| prdy_last_nav               | 전일 최종 NAV                | String | Y        | 112    |                                                           |
-| nav                         | NAV                          | String | Y        | 112    |                                                           |
-| nav_prdy_vrss               | NAV 전일 대비                | String | Y        | 112    |                                                           |
-| nav_prdy_vrss_sign          | NAV 전일 대비 부호           | String | Y        | 1      |                                                           |
-| nav_prdy_ctrt               | NAV 전일 대비율              | String | Y        | 82     |                                                           |
-| trc_errt                    | 추적 오차율                  | String | Y        | 82     |                                                           |
-| stck_sdpr                   | 주식 기준가                  | String | Y        | 10     |                                                           |
-| stck_sspr                   | 주식 대용가                  | String | Y        | 10     |                                                           |
-| nmix_ctrt                   | 지수 대비율                  | String | Y        | 135    |                                                           |
-| etf_crcl_stcn               | ETF 유통 주수                | String | Y        | 18     |                                                           |
-| etf_ntas_ttam               | ETF 순자산 총액              | String | Y        | 22     |                                                           |
-| etf_frcr_ntas_ttam          | ETF 외화 순자산 총액         | String | Y        | 22     |                                                           |
-| frgn_limt_rate              | 외국인 한도 비율             | String | Y        | 84     |                                                           |
-| frgn_oder_able_qty          | 외국인 주문 가능 수량        | String | Y        | 18     |                                                           |
-| etf_cu_unit_scrt_cnt        | ETF CU 단위 증권 수          | String | Y        | 18     |                                                           |
-| etf_cnfg_issu_cnt           | ETF 구성 종목 수             | String | Y        | 18     |                                                           |
-| etf_dvdn_cycl               | ETF 배당 주기                | String | Y        | 2      |                                                           |
-| crcd                        | 통화 코드                    | String | Y        | 4      |                                                           |
-| etf_crcl_ntas_ttam          | ETF 유통 순자산 총액         | String | Y        | 22     |                                                           |
-| etf_frcr_crcl_ntas_ttam     | ETF 외화 유통 순자산 총액    | String | Y        | 22     |                                                           |
-| etf_frcr_last_ntas_wrth_val | ETF 외화 최종 순자산 가치 값 | String | Y        | 13     |                                                           |
-| lp_oder_able_cls_code       | LP 주문 가능 구분 코드       | String | Y        | 2      |                                                           |
-| stck_dryy_hgpr              | 주식 연중 최고가             | String | Y        | 10     |                                                           |
-| dryy_hgpr_vrss_prpr_rate    | 연중 최고가 대비 현재가 비율 | String | Y        | 84     |                                                           |
-| dryy_hgpr_date              | 연중 최고가 일자             | String | Y        | 8      |                                                           |
-| stck_dryy_lwpr              | 주식 연중 최저가             | String | Y        | 10     |                                                           |
-| dryy_lwpr_vrss_prpr_rate    | 연중 최저가 대비 현재가 비율 | String | Y        | 84     |                                                           |
-| dryy_lwpr_date              | 연중 최저가 일자             | String | Y        | 8      |                                                           |
-| bstp_kor_isnm               | 업종 한글 종목명             | String | Y        | 40     | ※ 거래소 정보로 특정 종목은 업종구분이 없어 데이터 미회신 |
-| vi_cls_code                 | VI적용구분코드               | String | Y        | 1      |                                                           |
-| lstn_stcn                   | 상장 주수                    | String | Y        | 18     |                                                           |
-| frgn_hldn_qty               | 외국인 보유 수량             | String | Y        | 18     |                                                           |
-| frgn_hldn_qty_rate          | 외국인 보유 수량 비율        | String | Y        | 84     |                                                           |
-| etf_trc_ert_mltp            | ETF 추적 수익률 배수         | String | Y        | 126    |                                                           |
-| dprt                        | 괴리율                       | String | Y        | 82     |                                                           |
-| mbcr_name                   | 회원사 명                    | String | Y        | 50     |                                                           |
-| stck_lstn_date              | 주식 상장 일자               | String | Y        | 8      |                                                           |
-| mtrt_date                   | 만기 일자                    | String | Y        | 8      |                                                           |
-| shrg_type_code              | 분배금형태코드               | String | Y        | 2      |                                                           |
-| lp_hldn_rate                | LP 보유 비율                 | String | Y        | 84     |                                                           |
-| etf_trgt_nmix_bstp_code     | ETF대상지수업종코드          | String | Y        | 4      |                                                           |
-| etf_div_name                | ETF 분류 명                  | String | Y        | 40     |                                                           |
-| etf_rprs_bstp_kor_isnm      | ETF 대표 업종 한글 종목명    | String | Y        | 40     |                                                           |
-| lp_hldn_vol                 | ETN LP 보유량                | String | Y        | 18     |                                                           |
+| Element                            | 한글명                       | Type   | Required | Length | Description                                               |
+| ---------------------------------- | ---------------------------- | ------ | -------- | ------ | --------------------------------------------------------- |
+| rt_cd                              | 성공 실패 여부               | String | Y        | 1      |                                                           |
+| msg_cd                             | 응답코드                     | String | Y        | 8      |                                                           |
+| msg1                               | 응답메세지                   | String | Y        | 80     |                                                           |
+| output                             | 응답상세                     | Object | Y        |        |                                                           |
+| output.stck_prpr                   | 주식 현재가                  | String | Y        | 10     |                                                           |
+| output.prdy_vrss_sign              | 전일 대비 부호               | String | Y        | 1      |                                                           |
+| output.prdy_vrss                   | 전일 대비                    | String | Y        | 10     |                                                           |
+| output.prdy_ctrt                   | 전일 대비율                  | String | Y        | 82     |                                                           |
+| output.acml_vol                    | 누적 거래량                  | String | Y        | 18     |                                                           |
+| output.prdy_vol                    | 전일 거래량                  | String | Y        | 18     |                                                           |
+| output.stck_mxpr                   | 주식 상한가                  | String | Y        | 10     |                                                           |
+| output.stck_llam                   | 주식 하한가                  | String | Y        | 10     |                                                           |
+| output.stck_prdy_clpr              | 주식 전일 종가               | String | Y        | 10     |                                                           |
+| output.stck_oprc                   | 주식 시가2                   | String | Y        | 10     |                                                           |
+| output.prdy_clpr_vrss_oprc_rate    | 전일 종가 대비 시가2 비율    | String | Y        | 84     |                                                           |
+| output.stck_hgpr                   | 주식 최고가                  | String | Y        | 10     |                                                           |
+| output.prdy_clpr_vrss_hgpr_rate    | 전일 종가 대비 최고가 비율   | String | Y        | 84     |                                                           |
+| output.stck_lwpr                   | 주식 최저가                  | String | Y        | 10     |                                                           |
+| output.prdy_clpr_vrss_lwpr_rate    | 전일 종가 대비 최저가 비율   | String | Y        | 84     |                                                           |
+| output.prdy_last_nav               | 전일 최종 NAV                | String | Y        | 112    |                                                           |
+| output.nav                         | NAV                          | String | Y        | 112    |                                                           |
+| output.nav_prdy_vrss               | NAV 전일 대비                | String | Y        | 112    |                                                           |
+| output.nav_prdy_vrss_sign          | NAV 전일 대비 부호           | String | Y        | 1      |                                                           |
+| output.nav_prdy_ctrt               | NAV 전일 대비율              | String | Y        | 82     |                                                           |
+| output.trc_errt                    | 추적 오차율                  | String | Y        | 82     |                                                           |
+| output.stck_sdpr                   | 주식 기준가                  | String | Y        | 10     |                                                           |
+| output.stck_sspr                   | 주식 대용가                  | String | Y        | 10     |                                                           |
+| output.nmix_ctrt                   | 지수 대비율                  | String | Y        | 135    |                                                           |
+| output.etf_crcl_stcn               | ETF 유통 주수                | String | Y        | 18     |                                                           |
+| output.etf_ntas_ttam               | ETF 순자산 총액              | String | Y        | 22     |                                                           |
+| output.etf_frcr_ntas_ttam          | ETF 외화 순자산 총액         | String | Y        | 22     |                                                           |
+| output.frgn_limt_rate              | 외국인 한도 비율             | String | Y        | 84     |                                                           |
+| output.frgn_oder_able_qty          | 외국인 주문 가능 수량        | String | Y        | 18     |                                                           |
+| output.etf_cu_unit_scrt_cnt        | ETF CU 단위 증권 수          | String | Y        | 18     |                                                           |
+| output.etf_cnfg_issu_cnt           | ETF 구성 종목 수             | String | Y        | 18     |                                                           |
+| output.etf_dvdn_cycl               | ETF 배당 주기                | String | Y        | 2      |                                                           |
+| output.crcd                        | 통화 코드                    | String | Y        | 4      |                                                           |
+| output.etf_crcl_ntas_ttam          | ETF 유통 순자산 총액         | String | Y        | 22     |                                                           |
+| output.etf_frcr_crcl_ntas_ttam     | ETF 외화 유통 순자산 총액    | String | Y        | 22     |                                                           |
+| output.etf_frcr_last_ntas_wrth_val | ETF 외화 최종 순자산 가치 값 | String | Y        | 13     |                                                           |
+| output.lp_oder_able_cls_code       | LP 주문 가능 구분 코드       | String | Y        | 2      |                                                           |
+| output.stck_dryy_hgpr              | 주식 연중 최고가             | String | Y        | 10     |                                                           |
+| output.dryy_hgpr_vrss_prpr_rate    | 연중 최고가 대비 현재가 비율 | String | Y        | 84     |                                                           |
+| output.dryy_hgpr_date              | 연중 최고가 일자             | String | Y        | 8      |                                                           |
+| output.stck_dryy_lwpr              | 주식 연중 최저가             | String | Y        | 10     |                                                           |
+| output.dryy_lwpr_vrss_prpr_rate    | 연중 최저가 대비 현재가 비율 | String | Y        | 84     |                                                           |
+| output.dryy_lwpr_date              | 연중 최저가 일자             | String | Y        | 8      |                                                           |
+| output.bstp_kor_isnm               | 업종 한글 종목명             | String | Y        | 40     | ※ 거래소 정보로 특정 종목은 업종구분이 없어 데이터 미회신 |
+| output.vi_cls_code                 | VI적용구분코드               | String | Y        | 1      |                                                           |
+| output.lstn_stcn                   | 상장 주수                    | String | Y        | 18     |                                                           |
+| output.frgn_hldn_qty               | 외국인 보유 수량             | String | Y        | 18     |                                                           |
+| output.frgn_hldn_qty_rate          | 외국인 보유 수량 비율        | String | Y        | 84     |                                                           |
+| output.etf_trc_ert_mltp            | ETF 추적 수익률 배수         | String | Y        | 126    |                                                           |
+| output.dprt                        | 괴리율                       | String | Y        | 82     |                                                           |
+| output.mbcr_name                   | 회원사 명                    | String | Y        | 50     |                                                           |
+| output.stck_lstn_date              | 주식 상장 일자               | String | Y        | 8      |                                                           |
+| output.mtrt_date                   | 만기 일자                    | String | Y        | 8      |                                                           |
+| output.shrg_type_code              | 분배금형태코드               | String | Y        | 2      |                                                           |
+| output.lp_hldn_rate                | LP 보유 비율                 | String | Y        | 84     |                                                           |
+| output.etf_trgt_nmix_bstp_code     | ETF대상지수업종코드          | String | Y        | 4      |                                                           |
+| output.etf_div_name                | ETF 분류 명                  | String | Y        | 40     |                                                           |
+| output.etf_rprs_bstp_kor_isnm      | ETF 대표 업종 한글 종목명    | String | Y        | 40     |                                                           |
+| output.lp_hldn_vol                 | ETN LP 보유량                | String | Y        | 18     |                                                           |

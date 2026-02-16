@@ -58,18 +58,18 @@ ELW 신규상장종목 API입니다.
 
 ### Body
 
-| Element           | 한글명               | Type         | Required | Length | Description |
-| ----------------- | -------------------- | ------------ | -------- | ------ | ----------- |
-| rt_cd             | 성공 실패 여부       | String       | Y        | 1      |             |
-| msg_cd            | 응답코드             | String       | Y        | 8      |             |
-| msg1              | 응답메세지           | String       | Y        | 80     |             |
-| output            | 응답상세             | Object Array | Y        |        | array       |
-| stck_lstn_date    | 주식상장일자         | String       | Y        | 8      |             |
-| elw_kor_isnm      | ELW한글종목명        | String       | Y        | 40     |             |
-| elw_shrn_iscd     | ELW단축종목코드      | String       | Y        | 9      |             |
-| unas_isnm         | 기초자산종목명       | String       | Y        | 40     |             |
-| pblc_co_name      | 발행회사명           | String       | Y        | 40     |             |
-| lstn_stcn         | 상장주수             | String       | Y        | 18     |             |
-| acpr              | 행사가               | String       | Y        | 112    |             |
-| stck_last_tr_date | 주식최종거래일자     | String       | Y        | 8      |             |
-| elw_ko_barrier    | 조기종료발생기준가격 | String       | Y        | 112    |             |
+| Element                  | 한글명               | Type         | Required | Length | Description |
+| ------------------------ | -------------------- | ------------ | -------- | ------ | ----------- |
+| rt_cd                    | 성공 실패 여부       | String       | Y        | 1      |             |
+| msg_cd                   | 응답코드             | String       | Y        | 8      |             |
+| msg1                     | 응답메세지           | String       | Y        | 80     |             |
+| output                   | 응답상세             | Object Array | Y        |        | array       |
+| output.stck_lstn_date    | 주식상장일자         | String       | Y        | 8      |             |
+| output.elw_kor_isnm      | ELW한글종목명        | String       | Y        | 40     |             |
+| output.elw_shrn_iscd     | ELW단축종목코드      | String       | Y        | 9      |             |
+| output.unas_isnm         | 기초자산종목명       | String       | Y        | 40     |             |
+| output.pblc_co_name      | 발행회사명           | String       | Y        | 40     |             |
+| output.lstn_stcn         | 상장주수             | String       | Y        | 18     |             |
+| output.acpr              | 행사가               | String       | Y        | 112    |             |
+| output.stck_last_tr_date | 주식최종거래일자     | String       | Y        | 8      |             |
+| output.elw_ko_barrier    | 조기종료발생기준가격 | String       | Y        | 112    |             |

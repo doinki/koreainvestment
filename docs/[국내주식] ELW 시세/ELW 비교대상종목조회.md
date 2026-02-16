@@ -53,11 +53,11 @@ ELW 비교대상종목조회 API입니다.
 
 ### Body
 
-| Element       | 한글명          | Type   | Required | Length | Description |
-| ------------- | --------------- | ------ | -------- | ------ | ----------- |
-| rt_cd         | 성공 실패 여부  | String | Y        | 1      |             |
-| msg_cd        | 응답코드        | String | Y        | 8      |             |
-| msg1          | 응답메세지      | String | Y        | 80     |             |
-| output        | 응답상세        | Object | Y        |        |             |
-| elw_shrn_iscd | ELW단축종목코드 | String | Y        | 9      |             |
-| elw_kor_isnm  | ELW한글종목명   | String | Y        | 40     |             |
+| Element              | 한글명          | Type   | Required | Length | Description |
+| -------------------- | --------------- | ------ | -------- | ------ | ----------- |
+| rt_cd                | 성공 실패 여부  | String | Y        | 1      |             |
+| msg_cd               | 응답코드        | String | Y        | 8      |             |
+| msg1                 | 응답메세지      | String | Y        | 80     |             |
+| output               | 응답상세        | Object | Y        |        |             |
+| output.elw_shrn_iscd | ELW단축종목코드 | String | Y        | 9      |             |
+| output.elw_kor_isnm  | ELW한글종목명   | String | Y        | 40     |             |

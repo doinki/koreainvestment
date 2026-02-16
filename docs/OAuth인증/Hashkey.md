@@ -5,8 +5,8 @@
 - URL: /uapi/hashkey
 - 실전 DOMAIN: https://openapi.koreainvestment.com:9443
 - 모의 DOMAIN: https://openapivts.koreainvestment.com:29443
-- 실전 TR ID: null
-- 모의 TR ID: null
+- 실전 TR ID:
+- 모의 TR ID:
 
 ## 개요
 

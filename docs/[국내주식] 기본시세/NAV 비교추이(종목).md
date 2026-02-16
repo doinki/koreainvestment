@@ -53,30 +53,30 @@ NAV 비교추이(종목) API입니다.
 
 ### Body
 
-| Element            | 한글명             | Type   | Required | Length | Description |
-| ------------------ | ------------------ | ------ | -------- | ------ | ----------- |
-| rt_cd              | 성공 실패 여부     | String | Y        | 1      |             |
-| msg_cd             | 응답코드           | String | Y        | 8      |             |
-| msg1               | 응답메세지         | String | Y        | 80     |             |
-| output1            | 응답상세           | Object | Y        |        |             |
-| stck_prpr          | 주식 현재가        | String | Y        | 8      |             |
-| prdy_vrss          | 전일 대비          | String | Y        | 8      |             |
-| prdy_vrss_sign     | 전일 대비 부호     | String | Y        | 2      |             |
-| prdy_ctrt          | 전일 대비율        | String | Y        | 4      |             |
-| acml_vol           | 누적 거래량        | String | Y        | 12     |             |
-| acml_tr_pbmn       | 누적 거래 대금     | String | Y        | 60     |             |
-| stck_prdy_clpr     | 주식 전일 종가     | String | Y        | 10     |             |
-| stck_oprc          | 주식 시가2         | String | Y        | 10     |             |
-| stck_hgpr          | 주식 최고가        | String | Y        | 10     |             |
-| stck_lwpr          | 주식 최저가        | String | Y        | 10     |             |
-| stck_mxpr          | 주식 상한가        | String | Y        | 10     |             |
-| stck_llam          | 주식 하한가        | String | Y        | 10     |             |
-| output2            | 응답상세           | Object | Y        |        |             |
-| nav                | NAV                | String | Y        | 11     |             |
-| nav_prdy_vrss_sign | NAV 전일 대비 부호 | String | Y        | 1      |             |
-| nav_prdy_vrss      | NAV 전일 대비      | String | Y        | 11     |             |
-| nav_prdy_ctrt      | NAV 전일 대비율    | String | Y        | 8      |             |
-| prdy_clpr_nav      | NAV전일종가        | String | Y        | 11     |             |
-| oprc_nav           | NAV시가            | String | Y        | 11     |             |
-| hprc_nav           | NAV고가            | String | Y        | 11     |             |
-| lprc_nav           | NAV저가            | String | Y        | 11     |             |
+| Element                    | 한글명             | Type   | Required | Length | Description |
+| -------------------------- | ------------------ | ------ | -------- | ------ | ----------- |
+| rt_cd                      | 성공 실패 여부     | String | Y        | 1      |             |
+| msg_cd                     | 응답코드           | String | Y        | 8      |             |
+| msg1                       | 응답메세지         | String | Y        | 80     |             |
+| output1                    | 응답상세           | Object | Y        |        |             |
+| output1.stck_prpr          | 주식 현재가        | String | Y        | 8      |             |
+| output1.prdy_vrss          | 전일 대비          | String | Y        | 8      |             |
+| output1.prdy_vrss_sign     | 전일 대비 부호     | String | Y        | 2      |             |
+| output1.prdy_ctrt          | 전일 대비율        | String | Y        | 4      |             |
+| output1.acml_vol           | 누적 거래량        | String | Y        | 12     |             |
+| output1.acml_tr_pbmn       | 누적 거래 대금     | String | Y        | 60     |             |
+| output1.stck_prdy_clpr     | 주식 전일 종가     | String | Y        | 10     |             |
+| output1.stck_oprc          | 주식 시가2         | String | Y        | 10     |             |
+| output1.stck_hgpr          | 주식 최고가        | String | Y        | 10     |             |
+| output1.stck_lwpr          | 주식 최저가        | String | Y        | 10     |             |
+| output1.stck_mxpr          | 주식 상한가        | String | Y        | 10     |             |
+| output1.stck_llam          | 주식 하한가        | String | Y        | 10     |             |
+| output2                    | 응답상세           | Object | Y        |        |             |
+| output2.nav                | NAV                | String | Y        | 11     |             |
+| output2.nav_prdy_vrss_sign | NAV 전일 대비 부호 | String | Y        | 1      |             |
+| output2.nav_prdy_vrss      | NAV 전일 대비      | String | Y        | 11     |             |
+| output2.nav_prdy_ctrt      | NAV 전일 대비율    | String | Y        | 8      |             |
+| output2.prdy_clpr_nav      | NAV전일종가        | String | Y        | 11     |             |
+| output2.oprc_nav           | NAV시가            | String | Y        | 11     |             |
+| output2.hprc_nav           | NAV고가            | String | Y        | 11     |             |
+| output2.lprc_nav           | NAV저가            | String | Y        | 11     |             |

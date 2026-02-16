@@ -62,22 +62,22 @@ ELW 지표순위 API입니다.
 
 ### Body
 
-| Element        | 한글명               | Type         | Required | Length | Description |
-| -------------- | -------------------- | ------------ | -------- | ------ | ----------- |
-| rt_cd          | 성공 실패 여부       | String       | Y        | 1      |             |
-| msg_cd         | 응답코드             | String       | Y        | 8      |             |
-| msg1           | 응답메세지           | String       | Y        | 80     |             |
-| output1        | 응답상세             | Object Array | Y        |        | array       |
-| elw_shrn_iscd  | ELW단축종목코드      | String       | Y        | 9      |             |
-| elw_kor_isnm   | ELW한글종목명        | String       | Y        | 40     |             |
-| elw_prpr       | ELW현재가            | String       | Y        | 10     |             |
-| prdy_vrss      | 전일대비             | String       | Y        | 10     |             |
-| prdy_vrss_sign | 전일대비부호         | String       | Y        | 1      |             |
-| prdy_ctrt      | 전일대비율           | String       | Y        | 82     |             |
-| acml_vol       | 누적거래량           | String       | Y        | 18     |             |
-| stck_cnvr_rate | 주식전환비율         | String       | Y        | 136    |             |
-| lvrg_val       | 레버리지값           | String       | Y        | 114    |             |
-| acpr           | 행사가               | String       | Y        | 112    |             |
-| tmvl_val       | 시간가치값           | String       | Y        | 132    |             |
-| invl_val       | 내재가치값           | String       | Y        | 132    |             |
-| elw_ko_barrier | 조기종료발생기준가격 | String       | Y        | 112    |             |
+| Element                | 한글명               | Type         | Required | Length | Description |
+| ---------------------- | -------------------- | ------------ | -------- | ------ | ----------- |
+| rt_cd                  | 성공 실패 여부       | String       | Y        | 1      |             |
+| msg_cd                 | 응답코드             | String       | Y        | 8      |             |
+| msg1                   | 응답메세지           | String       | Y        | 80     |             |
+| output1                | 응답상세             | Object Array | Y        |        | array       |
+| output1.elw_shrn_iscd  | ELW단축종목코드      | String       | Y        | 9      |             |
+| output1.elw_kor_isnm   | ELW한글종목명        | String       | Y        | 40     |             |
+| output1.elw_prpr       | ELW현재가            | String       | Y        | 10     |             |
+| output1.prdy_vrss      | 전일대비             | String       | Y        | 10     |             |
+| output1.prdy_vrss_sign | 전일대비부호         | String       | Y        | 1      |             |
+| output1.prdy_ctrt      | 전일대비율           | String       | Y        | 82     |             |
+| output1.acml_vol       | 누적거래량           | String       | Y        | 18     |             |
+| output1.stck_cnvr_rate | 주식전환비율         | String       | Y        | 136    |             |
+| output1.lvrg_val       | 레버리지값           | String       | Y        | 114    |             |
+| output1.acpr           | 행사가               | String       | Y        | 112    |             |
+| output1.tmvl_val       | 시간가치값           | String       | Y        | 132    |             |
+| output1.invl_val       | 내재가치값           | String       | Y        | 132    |             |
+| output1.elw_ko_barrier | 조기종료발생기준가격 | String       | Y        | 112    |             |

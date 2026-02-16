@@ -48,11 +48,11 @@ HTS조회상위20종목 API입니다.
 
 ### Body
 
-| Element           | 한글명         | Type   | Required | Length | Description            |
-| ----------------- | -------------- | ------ | -------- | ------ | ---------------------- |
-| rt_cd             | 성공 실패 여부 | String | Y        | 1      |                        |
-| msg_cd            | 응답코드       | String | Y        | 8      |                        |
-| msg1              | 응답메세지     | String | Y        | 80     |                        |
-| output1           | 응답상세       | Object | Y        |        |                        |
-| mrkt_div_cls_code | 시장구분       | String | Y        | 9      | J : 코스피, Q : 코스닥 |
-| mksc_shrn_iscd    | 종목코드       | String | Y        | 2      | 종목코드               |
+| Element                   | 한글명         | Type   | Required | Length | Description            |
+| ------------------------- | -------------- | ------ | -------- | ------ | ---------------------- |
+| rt_cd                     | 성공 실패 여부 | String | Y        | 1      |                        |
+| msg_cd                    | 응답코드       | String | Y        | 8      |                        |
+| msg1                      | 응답메세지     | String | Y        | 80     |                        |
+| output1                   | 응답상세       | Object | Y        |        |                        |
+| output1.mrkt_div_cls_code | 시장구분       | String | Y        | 9      | J : 코스피, Q : 코스닥 |
+| output1.mksc_shrn_iscd    | 종목코드       | String | Y        | 2      | 종목코드               |

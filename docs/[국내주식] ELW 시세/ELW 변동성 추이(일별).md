@@ -53,24 +53,24 @@ ELW 변동성 추이(일별) API입니다.
 
 ### Body
 
-| Element        | 한글명             | Type         | Required | Length | Description |
-| -------------- | ------------------ | ------------ | -------- | ------ | ----------- |
-| rt_cd          | 성공 실패 여부     | String       | Y        | 1      |             |
-| msg_cd         | 응답코드           | String       | Y        | 8      |             |
-| msg1           | 응답메세지         | String       | Y        | 80     |             |
-| output         | 응답상세           | Object Array | Y        |        | array       |
-| stck_bsop_date | 주식 영업 일자     | String       | Y        | 8      |             |
-| elw_prpr       | ELW 현재가         | String       | Y        | 10     |             |
-| prdy_vrss      | 전일대비           | String       | Y        | 10     |             |
-| prdy_vrss_sign | 전일대비부호       | String       | Y        | 1      |             |
-| prdy_ctrt      | 전일대비율         | String       | Y        | 8      |             |
-| elw_oprc       | elw 시가2          | String       | Y        | 10     |             |
-| elw_hgpr       | elw 최고가         | String       | Y        | 10     |             |
-| elw_lwpr       | elw 최저가         | String       | Y        | 10     |             |
-| acml_vol       | 누적 거래량        | String       | Y        | 18     |             |
-| d10_hist_vltl  | 10일 역사적 변동성 | String       | Y        | 11     |             |
-| d20_hist_vltl  | 20일 역사적 변동성 | String       | Y        | 11     |             |
-| d30_hist_vltl  | 30일 역사적 변동성 | String       | Y        | 11     |             |
-| d60_hist_vltl  | 60일 역사적 변동성 | String       | Y        | 11     |             |
-| d90_hist_vltl  | 90일 역사적 변동성 | String       | Y        | 11     |             |
-| hts_ints_vltl  | HTS 내재 변동성    | String       | Y        | 11     |             |
+| Element               | 한글명             | Type         | Required | Length | Description |
+| --------------------- | ------------------ | ------------ | -------- | ------ | ----------- |
+| rt_cd                 | 성공 실패 여부     | String       | Y        | 1      |             |
+| msg_cd                | 응답코드           | String       | Y        | 8      |             |
+| msg1                  | 응답메세지         | String       | Y        | 80     |             |
+| output                | 응답상세           | Object Array | Y        |        | array       |
+| output.stck_bsop_date | 주식 영업 일자     | String       | Y        | 8      |             |
+| output.elw_prpr       | ELW 현재가         | String       | Y        | 10     |             |
+| output.prdy_vrss      | 전일대비           | String       | Y        | 10     |             |
+| output.prdy_vrss_sign | 전일대비부호       | String       | Y        | 1      |             |
+| output.prdy_ctrt      | 전일대비율         | String       | Y        | 8      |             |
+| output.elw_oprc       | elw 시가2          | String       | Y        | 10     |             |
+| output.elw_hgpr       | elw 최고가         | String       | Y        | 10     |             |
+| output.elw_lwpr       | elw 최저가         | String       | Y        | 10     |             |
+| output.acml_vol       | 누적 거래량        | String       | Y        | 18     |             |
+| output.d10_hist_vltl  | 10일 역사적 변동성 | String       | Y        | 11     |             |
+| output.d20_hist_vltl  | 20일 역사적 변동성 | String       | Y        | 11     |             |
+| output.d30_hist_vltl  | 30일 역사적 변동성 | String       | Y        | 11     |             |
+| output.d60_hist_vltl  | 60일 역사적 변동성 | String       | Y        | 11     |             |
+| output.d90_hist_vltl  | 90일 역사적 변동성 | String       | Y        | 11     |             |
+| output.hts_ints_vltl  | HTS 내재 변동성    | String       | Y        | 11     |             |

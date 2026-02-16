@@ -67,38 +67,38 @@ ELW 기초자산별 종목시세 API입니다.
 
 ### Body
 
-| Element            | 한글명           | Type         | Required | Length | Description |
-| ------------------ | ---------------- | ------------ | -------- | ------ | ----------- |
-| rt_cd              | 성공 실패 여부   | String       | Y        | 1      |             |
-| msg_cd             | 응답코드         | String       | Y        | 8      |             |
-| msg1               | 응답메세지       | String       | Y        | 80     |             |
-| output             | 응답상세         | Object Array | Y        |        | array       |
-| elw_shrn_iscd      | ELW단축종목코드  | String       | Y        | 9      |             |
-| hts_kor_isnm       | HTS한글종목명    | String       | Y        | 40     |             |
-| elw_prpr           | ELW현재가        | String       | Y        | 10     |             |
-| prdy_vrss          | 전일대비         | String       | Y        | 10     |             |
-| prdy_vrss_sign     | 전일대비부호     | String       | Y        | 1      |             |
-| prdy_ctrt          | 전일대비율       | String       | Y        | 82     |             |
-| acml_vol           | 누적거래량       | String       | Y        | 18     |             |
-| acpr               | 행사가           | String       | Y        | 112    |             |
-| prls_qryr_stpr_prc | 손익분기주가가격 | String       | Y        | 112    |             |
-| hts_rmnn_dynu      | HTS잔존일수      | String       | Y        | 5      |             |
-| hts_ints_vltl      | HTS내재변동성    | String       | Y        | 114    |             |
-| stck_cnvr_rate     | 주식전환비율     | String       | Y        | 136    |             |
-| lp_hvol            | LP보유량         | String       | Y        | 18     |             |
-| lp_rlim            | LP비중           | String       | Y        | 52     |             |
-| lvrg_val           | 레버리지값       | String       | Y        | 114    |             |
-| gear               | 기어링           | String       | Y        | 84     |             |
-| delta_val          | 델타값           | String       | Y        | 114    |             |
-| gama               | 감마             | String       | Y        | 84     |             |
-| vega               | 베가             | String       | Y        | 84     |             |
-| theta              | 세타             | String       | Y        | 84     |             |
-| prls_qryr_rate     | 손익분기비율     | String       | Y        | 84     |             |
-| cfp                | 자본지지점       | String       | Y        | 112    |             |
-| prit               | 패리티           | String       | Y        | 112    |             |
-| invl_val           | 내재가치값       | String       | Y        | 132    |             |
-| tmvl_val           | 시간가치값       | String       | Y        | 132    |             |
-| hts_thpr           | HTS이론가        | String       | Y        | 112    |             |
-| stck_lstn_date     | 주식상장일자     | String       | Y        | 8      |             |
-| stck_last_tr_date  | 주식최종거래일자 | String       | Y        | 8      |             |
-| lp_ntby_qty        | LP순매도량       | String       | Y        | 18     |             |
+| Element                   | 한글명           | Type         | Required | Length | Description |
+| ------------------------- | ---------------- | ------------ | -------- | ------ | ----------- |
+| rt_cd                     | 성공 실패 여부   | String       | Y        | 1      |             |
+| msg_cd                    | 응답코드         | String       | Y        | 8      |             |
+| msg1                      | 응답메세지       | String       | Y        | 80     |             |
+| output                    | 응답상세         | Object Array | Y        |        | array       |
+| output.elw_shrn_iscd      | ELW단축종목코드  | String       | Y        | 9      |             |
+| output.hts_kor_isnm       | HTS한글종목명    | String       | Y        | 40     |             |
+| output.elw_prpr           | ELW현재가        | String       | Y        | 10     |             |
+| output.prdy_vrss          | 전일대비         | String       | Y        | 10     |             |
+| output.prdy_vrss_sign     | 전일대비부호     | String       | Y        | 1      |             |
+| output.prdy_ctrt          | 전일대비율       | String       | Y        | 82     |             |
+| output.acml_vol           | 누적거래량       | String       | Y        | 18     |             |
+| output.acpr               | 행사가           | String       | Y        | 112    |             |
+| output.prls_qryr_stpr_prc | 손익분기주가가격 | String       | Y        | 112    |             |
+| output.hts_rmnn_dynu      | HTS잔존일수      | String       | Y        | 5      |             |
+| output.hts_ints_vltl      | HTS내재변동성    | String       | Y        | 114    |             |
+| output.stck_cnvr_rate     | 주식전환비율     | String       | Y        | 136    |             |
+| output.lp_hvol            | LP보유량         | String       | Y        | 18     |             |
+| output.lp_rlim            | LP비중           | String       | Y        | 52     |             |
+| output.lvrg_val           | 레버리지값       | String       | Y        | 114    |             |
+| output.gear               | 기어링           | String       | Y        | 84     |             |
+| output.delta_val          | 델타값           | String       | Y        | 114    |             |
+| output.gama               | 감마             | String       | Y        | 84     |             |
+| output.vega               | 베가             | String       | Y        | 84     |             |
+| output.theta              | 세타             | String       | Y        | 84     |             |
+| output.prls_qryr_rate     | 손익분기비율     | String       | Y        | 84     |             |
+| output.cfp                | 자본지지점       | String       | Y        | 112    |             |
+| output.prit               | 패리티           | String       | Y        | 112    |             |
+| output.invl_val           | 내재가치값       | String       | Y        | 132    |             |
+| output.tmvl_val           | 시간가치값       | String       | Y        | 132    |             |
+| output.hts_thpr           | HTS이론가        | String       | Y        | 112    |             |
+| output.stck_lstn_date     | 주식상장일자     | String       | Y        | 8      |             |
+| output.stck_last_tr_date  | 주식최종거래일자 | String       | Y        | 8      |             |
+| output.lp_ntby_qty        | LP순매도량       | String       | Y        | 18     |             |

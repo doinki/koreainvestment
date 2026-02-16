@@ -60,22 +60,22 @@ HTS(eFriend Plus) [0139] 변동성 완화장치(VI) 현황 데이터를 확인�
 
 ### Body
 
-| Element         | 한글명                 | Type   | Required | Length | Description               |
-| --------------- | ---------------------- | ------ | -------- | ------ | ------------------------- |
-| rt_cd           | 성공 실패 여부         | String | Y        | 1      |                           |
-| msg_cd          | 응답코드               | String | Y        | 8      |                           |
-| msg1            | 응답메세지             | String | Y        | 80     |                           |
-| output          | 응답상세               | Object | Y        |        |                           |
-| hts_kor_isnm    | HTS 한글 종목명        | String | Y        | 40     |                           |
-| mksc_shrn_iscd  | 유가증권 단축 종목코드 | String | Y        | 9      |                           |
-| vi_cls_code     | VI발동상태             | String | Y        | 1      | Y: 발동 / N: 해제         |
-| bsop_date       | 영업 일자              | String | Y        | 8      |                           |
-| cntg_vi_hour    | VI발동시간             | String | Y        | 6      | VI발동시간                |
-| vi_cncl_hour    | VI해제시간             | String | Y        | 6      | VI해제시간                |
-| vi_kind_code    | VI종류코드             | String | Y        | 1      | 1:정적 2:동적 3:정적&동적 |
-| vi_prc          | VI발동가격             | String | Y        | 10     |                           |
-| vi_stnd_prc     | 정적VI발동기준가격     | String | Y        | 10     |                           |
-| vi_dprt         | 정적VI발동괴리율       | String | Y        | 82     | %                         |
-| vi_dmc_stnd_prc | 동적VI발동기준가격     | String | Y        | 10     |                           |
-| vi_dmc_dprt     | 동적VI발동괴리율       | String | Y        | 82     | %                         |
-| vi_count        | VI발동횟수             | String | Y        | 7      |                           |
+| Element                | 한글명                 | Type   | Required | Length | Description               |
+| ---------------------- | ---------------------- | ------ | -------- | ------ | ------------------------- |
+| rt_cd                  | 성공 실패 여부         | String | Y        | 1      |                           |
+| msg_cd                 | 응답코드               | String | Y        | 8      |                           |
+| msg1                   | 응답메세지             | String | Y        | 80     |                           |
+| output                 | 응답상세               | Object | Y        |        |                           |
+| output.hts_kor_isnm    | HTS 한글 종목명        | String | Y        | 40     |                           |
+| output.mksc_shrn_iscd  | 유가증권 단축 종목코드 | String | Y        | 9      |                           |
+| output.vi_cls_code     | VI발동상태             | String | Y        | 1      | Y: 발동 / N: 해제         |
+| output.bsop_date       | 영업 일자              | String | Y        | 8      |                           |
+| output.cntg_vi_hour    | VI발동시간             | String | Y        | 6      | VI발동시간                |
+| output.vi_cncl_hour    | VI해제시간             | String | Y        | 6      | VI해제시간                |
+| output.vi_kind_code    | VI종류코드             | String | Y        | 1      | 1:정적 2:동적 3:정적&동적 |
+| output.vi_prc          | VI발동가격             | String | Y        | 10     |                           |
+| output.vi_stnd_prc     | 정적VI발동기준가격     | String | Y        | 10     |                           |
+| output.vi_dprt         | 정적VI발동괴리율       | String | Y        | 82     | %                         |
+| output.vi_dmc_stnd_prc | 동적VI발동기준가격     | String | Y        | 10     |                           |
+| output.vi_dmc_dprt     | 동적VI발동괴리율       | String | Y        | 82     | %                         |
+| output.vi_count        | VI발동횟수             | String | Y        | 7      |                           |

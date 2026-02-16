@@ -53,13 +53,13 @@ ELW 변동성 추이(틱) API입니다.
 
 ### Body
 
-| Element        | 한글명         | Type         | Required | Length | Description |
-| -------------- | -------------- | ------------ | -------- | ------ | ----------- |
-| rt_cd          | 성공 실패 여부 | String       | Y        | 1      |             |
-| msg_cd         | 응답코드       | String       | Y        | 8      |             |
-| msg1           | 응답메세지     | String       | Y        | 80     |             |
-| output         | 응답상세       | Object Array | Y        |        | array       |
-| bsop_date      | 주식영업일자   | String       | Y        | 8      |             |
-| stck_cntg_hour | ELW현재가      | String       | Y        | 6      |             |
-| elw_prpr       | 전일대비       | String       | Y        | 10     |             |
-| hts_ints_vltl  | 전일대비부호   | String       | Y        | 114    |             |
+| Element               | 한글명         | Type         | Required | Length | Description |
+| --------------------- | -------------- | ------------ | -------- | ------ | ----------- |
+| rt_cd                 | 성공 실패 여부 | String       | Y        | 1      |             |
+| msg_cd                | 응답코드       | String       | Y        | 8      |             |
+| msg1                  | 응답메세지     | String       | Y        | 80     |             |
+| output                | 응답상세       | Object Array | Y        |        | array       |
+| output.bsop_date      | 주식영업일자   | String       | Y        | 8      |             |
+| output.stck_cntg_hour | ELW현재가      | String       | Y        | 6      |             |
+| output.elw_prpr       | 전일대비       | String       | Y        | 10     |             |
+| output.hts_ints_vltl  | 전일대비부호   | String       | Y        | 114    |             |

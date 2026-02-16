@@ -50,20 +50,20 @@
 
 ### Body
 
-| Element        | 한글명         | Type         | Required | Length | Description |
-| -------------- | -------------- | ------------ | -------- | ------ | ----------- |
-| rt_cd          | 성공 실패 여부 | String       | Y        | 1      |             |
-| msg_cd         | 응답코드       | String       | Y        | 8      |             |
-| msg1           | 응답메세지     | String       | Y        | 80     |             |
-| output         | 응답상세       | Object Array | Y        |        | array       |
-| stck_cntg_hour | 주식체결시간   | String       | Y        | 6      |             |
-| elw_prpr       | ELW현재가      | String       | Y        | 10     |             |
-| prdy_vrss      | 전일대비       | String       | Y        | 10     |             |
-| prdy_vrss_sign | 전일대비부호   | String       | Y        | 1      |             |
-| prdy_ctrt      | 전일대비율     | String       | Y        | 82     |             |
-| hts_thpr       | hts 이론가     | String       | Y        | 112    |             |
-| delta_val      | 델타 값        | String       | Y        | 114    |             |
-| gama           | 감마           | String       | Y        | 84     |             |
-| theta          | 세타           | String       | Y        | 84     |             |
-| vega           | 베가           | String       | Y        | 84     |             |
-| rho            | 로우           | String       | Y        | 84     |             |
+| Element               | 한글명         | Type         | Required | Length | Description |
+| --------------------- | -------------- | ------------ | -------- | ------ | ----------- |
+| rt_cd                 | 성공 실패 여부 | String       | Y        | 1      |             |
+| msg_cd                | 응답코드       | String       | Y        | 8      |             |
+| msg1                  | 응답메세지     | String       | Y        | 80     |             |
+| output                | 응답상세       | Object Array | Y        |        | array       |
+| output.stck_cntg_hour | 주식체결시간   | String       | Y        | 6      |             |
+| output.elw_prpr       | ELW현재가      | String       | Y        | 10     |             |
+| output.prdy_vrss      | 전일대비       | String       | Y        | 10     |             |
+| output.prdy_vrss_sign | 전일대비부호   | String       | Y        | 1      |             |
+| output.prdy_ctrt      | 전일대비율     | String       | Y        | 82     |             |
+| output.hts_thpr       | hts 이론가     | String       | Y        | 112    |             |
+| output.delta_val      | 델타 값        | String       | Y        | 114    |             |
+| output.gama           | 감마           | String       | Y        | 84     |             |
+| output.theta          | 세타           | String       | Y        | 84     |             |
+| output.vega           | 베가           | String       | Y        | 84     |             |
+| output.rho            | 로우           | String       | Y        | 84     |             |

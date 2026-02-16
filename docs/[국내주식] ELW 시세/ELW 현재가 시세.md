@@ -52,47 +52,47 @@ ELW 현재가 시세 API입니다. ELW 관련 정보를 얻을 수 있습니다.
 
 ### Body
 
-| Element             | 한글명                  | Type         | Required | Length | Description |
-| ------------------- | ----------------------- | ------------ | -------- | ------ | ----------- |
-| rt_cd               | 성공 실패 여부          | String       | Y        | 1      |             |
-| msg_cd              | 응답코드                | String       | Y        | 8      |             |
-| msg1                | 응답메세지              | String       | Y        | 80     |             |
-| output1             | 응답상세                | Object Array | Y        |        | array       |
-| elw_shrn_iscd       | ELW 단축 종목코드       | String       | Y        | 9      |             |
-| hts_kor_isnm        | HTS 한글 종목명         | String       | Y        | 40     |             |
-| elw_prpr            | ELW 현재가              | String       | Y        | 10     |             |
-| prdy_vrss           | 전일 대비               | String       | Y        | 10     |             |
-| prdy_vrss_sign      | 전일 대비 부호          | String       | Y        | 1      |             |
-| prdy_ctrt           | 전일 대비율             | String       | Y        | 11     |             |
-| acml_vol            | 누적 거래량             | String       | Y        | 18     |             |
-| prdy_vrss_vol_rate  | 전일 대비 거래량 비율   | String       | Y        | 13     |             |
-| unas_shrn_iscd      | 기초자산 단축 종목코드  | String       | Y        | 9      |             |
-| unas_isnm           | 기초자산 종목명         | String       | Y        | 40     |             |
-| unas_prpr           | 기초자산 현재가         | String       | Y        | 14     |             |
-| unas_prdy_vrss      | 기초자산 전일 대비      | String       | Y        | 14     |             |
-| unas_prdy_vrss_sign | 기초자산 전일 대비 부호 | String       | Y        | 1      |             |
-| unas_prdy_ctrt      | 기초자산 전일 대비율    | String       | Y        | 11     |             |
-| bidp                | 매수호가                | String       | Y        | 10     |             |
-| askp                | 매도호가                | String       | Y        | 10     |             |
-| acml_tr_pbmn        | 누적 거래 대금          | String       | Y        | 18     |             |
-| vol_tnrt            | 거래량 회전율           | String       | Y        | 11     |             |
-| elw_oprc            | ELW 시가2               | String       | Y        | 10     |             |
-| elw_hgpr            | ELW 최고가              | String       | Y        | 10     |             |
-| elw_lwpr            | ELW 최저가              | String       | Y        | 10     |             |
-| stck_prdy_clpr      | 주식 전일 종가          | String       | Y        | 10     |             |
-| hts_thpr            | HTS 이론가              | String       | Y        | 14     |             |
-| dprt                | 괴리율                  | String       | Y        | 11     |             |
-| atm_cls_name        | ATM 구분 명             | String       | Y        | 10     |             |
-| hts_ints_vltl       | HTS 내재 변동성         | String       | Y        | 16     |             |
-| acpr                | 행사가                  | String       | Y        | 14     |             |
-| pvt_scnd_dmrs_prc   | 피벗 2차 디저항 가격    | String       | Y        | 10     |             |
-| pvt_frst_dmrs_prc   | 피벗 1차 디저항 가격    | String       | Y        | 10     |             |
-| pvt_pont_val        | 피벗 포인트 값          | String       | Y        | 10     |             |
-| pvt_frst_dmsp_prc   | 피벗 1차 디지지 가격    | String       | Y        | 10     |             |
-| pvt_scnd_dmsp_prc   | 피벗 2차 디지지 가격    | String       | Y        | 10     |             |
-| dmsp_val            | 디지지 값               | String       | Y        | 10     |             |
-| dmrs_val            | 디저항 값               | String       | Y        | 10     |             |
-| elw_sdpr            | ELW 기준가              | String       | Y        | 10     |             |
-| apprch_rate         | 접근도                  | String       | Y        | 14     |             |
-| tick_conv_prc       | 틱환산가                | String       | Y        | 11     |             |
-| invt_epmd_cntt      | 투자 유의 내용          | String       | Y        | 200    |             |
+| Element                     | 한글명                  | Type         | Required | Length | Description |
+| --------------------------- | ----------------------- | ------------ | -------- | ------ | ----------- |
+| rt_cd                       | 성공 실패 여부          | String       | Y        | 1      |             |
+| msg_cd                      | 응답코드                | String       | Y        | 8      |             |
+| msg1                        | 응답메세지              | String       | Y        | 80     |             |
+| output1                     | 응답상세                | Object Array | Y        |        | array       |
+| output1.elw_shrn_iscd       | ELW 단축 종목코드       | String       | Y        | 9      |             |
+| output1.hts_kor_isnm        | HTS 한글 종목명         | String       | Y        | 40     |             |
+| output1.elw_prpr            | ELW 현재가              | String       | Y        | 10     |             |
+| output1.prdy_vrss           | 전일 대비               | String       | Y        | 10     |             |
+| output1.prdy_vrss_sign      | 전일 대비 부호          | String       | Y        | 1      |             |
+| output1.prdy_ctrt           | 전일 대비율             | String       | Y        | 11     |             |
+| output1.acml_vol            | 누적 거래량             | String       | Y        | 18     |             |
+| output1.prdy_vrss_vol_rate  | 전일 대비 거래량 비율   | String       | Y        | 13     |             |
+| output1.unas_shrn_iscd      | 기초자산 단축 종목코드  | String       | Y        | 9      |             |
+| output1.unas_isnm           | 기초자산 종목명         | String       | Y        | 40     |             |
+| output1.unas_prpr           | 기초자산 현재가         | String       | Y        | 14     |             |
+| output1.unas_prdy_vrss      | 기초자산 전일 대비      | String       | Y        | 14     |             |
+| output1.unas_prdy_vrss_sign | 기초자산 전일 대비 부호 | String       | Y        | 1      |             |
+| output1.unas_prdy_ctrt      | 기초자산 전일 대비율    | String       | Y        | 11     |             |
+| output1.bidp                | 매수호가                | String       | Y        | 10     |             |
+| output1.askp                | 매도호가                | String       | Y        | 10     |             |
+| output1.acml_tr_pbmn        | 누적 거래 대금          | String       | Y        | 18     |             |
+| output1.vol_tnrt            | 거래량 회전율           | String       | Y        | 11     |             |
+| output1.elw_oprc            | ELW 시가2               | String       | Y        | 10     |             |
+| output1.elw_hgpr            | ELW 최고가              | String       | Y        | 10     |             |
+| output1.elw_lwpr            | ELW 최저가              | String       | Y        | 10     |             |
+| output1.stck_prdy_clpr      | 주식 전일 종가          | String       | Y        | 10     |             |
+| output1.hts_thpr            | HTS 이론가              | String       | Y        | 14     |             |
+| output1.dprt                | 괴리율                  | String       | Y        | 11     |             |
+| output1.atm_cls_name        | ATM 구분 명             | String       | Y        | 10     |             |
+| output1.hts_ints_vltl       | HTS 내재 변동성         | String       | Y        | 16     |             |
+| output1.acpr                | 행사가                  | String       | Y        | 14     |             |
+| output1.pvt_scnd_dmrs_prc   | 피벗 2차 디저항 가격    | String       | Y        | 10     |             |
+| output1.pvt_frst_dmrs_prc   | 피벗 1차 디저항 가격    | String       | Y        | 10     |             |
+| output1.pvt_pont_val        | 피벗 포인트 값          | String       | Y        | 10     |             |
+| output1.pvt_frst_dmsp_prc   | 피벗 1차 디지지 가격    | String       | Y        | 10     |             |
+| output1.pvt_scnd_dmsp_prc   | 피벗 2차 디지지 가격    | String       | Y        | 10     |             |
+| output1.dmsp_val            | 디지지 값               | String       | Y        | 10     |             |
+| output1.dmrs_val            | 디저항 값               | String       | Y        | 10     |             |
+| output1.elw_sdpr            | ELW 기준가              | String       | Y        | 10     |             |
+| output1.apprch_rate         | 접근도                  | String       | Y        | 14     |             |
+| output1.tick_conv_prc       | 틱환산가                | String       | Y        | 11     |             |
+| output1.invt_epmd_cntt      | 투자 유의 내용          | String       | Y        | 200    |             |

@@ -118,8 +118,8 @@ async function generateMarkdown(data: ServiceResponse, path: string): Promise<st
 - URL: ${data.accessUrl}
 - 실전 DOMAIN: ${data.realDomain}
 - 모의 DOMAIN: ${data.virtualDomain}
-- 실전 TR ID: ${data.realTrId}
-- 모의 TR ID: ${data.virtualTrId}
+- 실전 TR ID: ${data.realTrId ?? ''}
+- 모의 TR ID: ${data.virtualTrId ?? ''}
 
 ## 개요
 ${data.apiSummary}
@@ -146,8 +146,20 @@ function generateMarkdownTable(properties: ServiceApiProperty[]): string {
   if (properties.length === 0) return '';
 
   const header = `| Element | 한글명 | Type | Required | Length | Description |\n| --- | --- | --- | --- | --- | --- |`;
+
+  const propertyCdMap = new Map(properties.map((p) => [p.propertyOrder, p.propertyCd]));
+
   const rows = properties.map((prop) => {
-    return `| ${sanitizeText(prop.propertyCd)} | ${sanitizeText(prop.propertyNm)} | ${
+    let displayCd = prop.propertyCd;
+    if (prop.propertyOrder.includes('.')) {
+      const parentOrder = prop.propertyOrder.split('.').slice(0, -1).join('.');
+      const parentCd = propertyCdMap.get(parentOrder);
+      if (parentCd) {
+        displayCd = `${parentCd}.${prop.propertyCd}`;
+      }
+    }
+
+    return `| ${sanitizeText(displayCd)} | ${sanitizeText(prop.propertyNm)} | ${
       DATA_TYPE_MAP[prop.propertyType] ?? prop.propertyType
     } | ${sanitizeText(prop.requireYn)} | ${sanitizeText(prop.propertyLength)} | ${sanitizeText(prop.description)} |`;
   });

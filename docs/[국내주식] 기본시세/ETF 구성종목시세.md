@@ -54,41 +54,41 @@ ETF 구성종목시세 API입니다.
 
 ### Body
 
-| Element              | 한글명                | Type         | Required | Length | Description |
-| -------------------- | --------------------- | ------------ | -------- | ------ | ----------- |
-| rt_cd                | 성공 실패 여부        | String       | Y        | 1      |             |
-| msg_cd               | 응답코드              | String       | Y        | 8      |             |
-| msg1                 | 응답메세지            | String       | Y        | 80     |             |
-| output1              | 응답상세              | Object       | Y        |        |             |
-| stck_prpr            | 주식 현재가           | String       | Y        | 10     |             |
-| prdy_vrss            | 전일 대비             | String       | Y        | 10     |             |
-| prdy_vrss_sign       | 전일 대비 부호        | String       | Y        | 1      |             |
-| prdy_ctrt            | 전일 대비율           | String       | Y        | 82     |             |
-| etf_cnfg_issu_avls   | ETF구성종목시가총액   | String       | Y        | 18     |             |
-| nav                  | NAV                   | String       | Y        | 112    |             |
-| nav_prdy_vrss_sign   | NAV 전일 대비 부호    | String       | Y        | 1      |             |
-| nav_prdy_vrss        | NAV 전일 대비         | String       | Y        | 112    |             |
-| nav_prdy_ctrt        | NAV 전일 대비율       | String       | Y        | 84     |             |
-| etf_ntas_ttam        | ETF 순자산 총액       | String       | Y        | 22     |             |
-| prdy_clpr_nav        | NAV전일종가           | String       | Y        | 112    |             |
-| oprc_nav             | NAV시가               | String       | Y        | 112    |             |
-| hprc_nav             | NAV고가               | String       | Y        | 112    |             |
-| lprc_nav             | NAV저가               | String       | Y        | 112    |             |
-| etf_cu_unit_scrt_cnt | ETF CU 단위 증권 수   | String       | Y        | 18     |             |
-| etf_cnfg_issu_cnt    | ETF 구성 종목 수      | String       | Y        | 18     |             |
-| output2              | 응답상세              | Object Array | Y        |        | array       |
-| stck_shrn_iscd       | 주식 단축 종목코드    | String       | Y        | 9      |             |
-| hts_kor_isnm         | HTS 한글 종목명       | String       | Y        | 40     |             |
-| stck_prpr            | 주식 현재가           | String       | Y        | 10     |             |
-| prdy_vrss            | 전일 대비             | String       | Y        | 10     |             |
-| prdy_vrss_sign       | 전일 대비 부호        | String       | Y        | 1      |             |
-| prdy_ctrt            | 전일 대비율           | String       | Y        | 82     |             |
-| acml_vol             | 누적 거래량           | String       | Y        | 18     |             |
-| acml_tr_pbmn         | 누적 거래 대금        | String       | Y        | 18     |             |
-| tday_rsfl_rate       | 당일 등락 비율        | String       | Y        | 52     |             |
-| prdy_vrss_vol        | 전일 대비 거래량      | String       | Y        | 18     |             |
-| tr_pbmn_tnrt         | 거래대금회전율        | String       | Y        | 82     |             |
-| hts_avls             | HTS 시가총액          | String       | Y        | 18     |             |
-| etf_cnfg_issu_avls   | ETF구성종목시가총액   | String       | Y        | 18     |             |
-| etf_cnfg_issu_rlim   | ETF구성종목비중       | String       | Y        | 72     |             |
-| etf_vltn_amt         | ETF구성종목내평가금액 | String       | Y        | 18     |             |
+| Element                      | 한글명                | Type         | Required | Length | Description |
+| ---------------------------- | --------------------- | ------------ | -------- | ------ | ----------- |
+| rt_cd                        | 성공 실패 여부        | String       | Y        | 1      |             |
+| msg_cd                       | 응답코드              | String       | Y        | 8      |             |
+| msg1                         | 응답메세지            | String       | Y        | 80     |             |
+| output1                      | 응답상세              | Object       | Y        |        |             |
+| output1.stck_prpr            | 주식 현재가           | String       | Y        | 10     |             |
+| output1.prdy_vrss            | 전일 대비             | String       | Y        | 10     |             |
+| output1.prdy_vrss_sign       | 전일 대비 부호        | String       | Y        | 1      |             |
+| output1.prdy_ctrt            | 전일 대비율           | String       | Y        | 82     |             |
+| output1.etf_cnfg_issu_avls   | ETF구성종목시가총액   | String       | Y        | 18     |             |
+| output1.nav                  | NAV                   | String       | Y        | 112    |             |
+| output1.nav_prdy_vrss_sign   | NAV 전일 대비 부호    | String       | Y        | 1      |             |
+| output1.nav_prdy_vrss        | NAV 전일 대비         | String       | Y        | 112    |             |
+| output1.nav_prdy_ctrt        | NAV 전일 대비율       | String       | Y        | 84     |             |
+| output1.etf_ntas_ttam        | ETF 순자산 총액       | String       | Y        | 22     |             |
+| output1.prdy_clpr_nav        | NAV전일종가           | String       | Y        | 112    |             |
+| output1.oprc_nav             | NAV시가               | String       | Y        | 112    |             |
+| output1.hprc_nav             | NAV고가               | String       | Y        | 112    |             |
+| output1.lprc_nav             | NAV저가               | String       | Y        | 112    |             |
+| output1.etf_cu_unit_scrt_cnt | ETF CU 단위 증권 수   | String       | Y        | 18     |             |
+| output1.etf_cnfg_issu_cnt    | ETF 구성 종목 수      | String       | Y        | 18     |             |
+| output2                      | 응답상세              | Object Array | Y        |        | array       |
+| output2.stck_shrn_iscd       | 주식 단축 종목코드    | String       | Y        | 9      |             |
+| output2.hts_kor_isnm         | HTS 한글 종목명       | String       | Y        | 40     |             |
+| output2.stck_prpr            | 주식 현재가           | String       | Y        | 10     |             |
+| output2.prdy_vrss            | 전일 대비             | String       | Y        | 10     |             |
+| output2.prdy_vrss_sign       | 전일 대비 부호        | String       | Y        | 1      |             |
+| output2.prdy_ctrt            | 전일 대비율           | String       | Y        | 82     |             |
+| output2.acml_vol             | 누적 거래량           | String       | Y        | 18     |             |
+| output2.acml_tr_pbmn         | 누적 거래 대금        | String       | Y        | 18     |             |
+| output2.tday_rsfl_rate       | 당일 등락 비율        | String       | Y        | 52     |             |
+| output2.prdy_vrss_vol        | 전일 대비 거래량      | String       | Y        | 18     |             |
+| output2.tr_pbmn_tnrt         | 거래대금회전율        | String       | Y        | 82     |             |
+| output2.hts_avls             | HTS 시가총액          | String       | Y        | 18     |             |
+| output2.etf_cnfg_issu_avls   | ETF구성종목시가총액   | String       | Y        | 18     |             |
+| output2.etf_cnfg_issu_rlim   | ETF구성종목비중       | String       | Y        | 72     |             |
+| output2.etf_vltn_amt         | ETF구성종목내평가금액 | String       | Y        | 18     |             |

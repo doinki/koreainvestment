@@ -109,52 +109,52 @@ ELW 종목검색 API입니다.
 
 ### Body
 
-| Element             | 한글명               | Type         | Required | Length | Description |
-| ------------------- | -------------------- | ------------ | -------- | ------ | ----------- |
-| rt_cd               | 성공 실패 여부       | String       | Y        | 1      |             |
-| msg_cd              | 응답코드             | String       | Y        | 8      |             |
-| msg1                | 응답메세지           | String       | Y        | 80     |             |
-| output1             | 응답상세             | Object Array | Y        |        | array       |
-| bond_shrn_iscd      | 채권단축종목코드     | String       | Y        | 9      |             |
-| hts_kor_isnm        | HTS한글종목명        | String       | Y        | 40     |             |
-| rght_type_name      | 권리유형명           | String       | Y        | 40     |             |
-| elw_prpr            | ELW현재가            | String       | Y        | 10     |             |
-| prdy_vrss           | 전일대비             | String       | Y        | 10     |             |
-| prdy_vrss_sign      | 전일대비부호         | String       | Y        | 1      |             |
-| prdy_ctrt           | 전일대비율           | String       | Y        | 82     |             |
-| acml_vol            | 누적거래량           | String       | Y        | 18     |             |
-| acpr                | 행사가               | String       | Y        | 112    |             |
-| stck_cnvr_rate      | 주식전환비율         | String       | Y        | 136    |             |
-| stck_lstn_date      | 주식상장일자         | String       | Y        | 8      |             |
-| stck_last_tr_date   | 주식최종거래일자     | String       | Y        | 8      |             |
-| hts_rmnn_dynu       | HTS잔존일수          | String       | Y        | 5      |             |
-| unas_isnm           | 기초자산종목명       | String       | Y        | 40     |             |
-| unas_prpr           | 기초자산현재가       | String       | Y        | 112    |             |
-| unas_prdy_vrss      | 기초자산전일대비     | String       | Y        | 112    |             |
-| unas_prdy_vrss_sign | 기초자산전일대비부호 | String       | Y        | 1      |             |
-| unas_prdy_ctrt      | 기초자산전일대비율   | String       | Y        | 82     |             |
-| unas_acml_vol       | 기초자산누적거래량   | String       | Y        | 18     |             |
-| moneyness           | MONEYNESS            | String       | Y        | 132    |             |
-| atm_cls_name        | ATM구분명            | String       | Y        | 10     |             |
-| prit                | 패리티               | String       | Y        | 112    |             |
-| delta_val           | 델타값               | String       | Y        | 114    |             |
-| hts_ints_vltl       | HTS내재변동성        | String       | Y        | 114    |             |
-| tmvl_val            | 시간가치값           | String       | Y        | 132    |             |
-| gear                | 기어링               | String       | Y        | 84     |             |
-| lvrg_val            | 레버리지값           | String       | Y        | 114    |             |
-| prls_qryr_rate      | 손익분기비율         | String       | Y        | 84     |             |
-| cfp                 | 자본지지점           | String       | Y        | 112    |             |
-| lstn_stcn           | 상장주수             | String       | Y        | 18     |             |
-| pblc_co_name        | 발행회사명           | String       | Y        | 40     |             |
-| lp_mbcr_name        | LP회원사명           | String       | Y        | 50     |             |
-| lp_hldn_rate        | LP보유비율           | String       | Y        | 84     |             |
-| elw_rght_form       | ELW권리형태          | String       | Y        | 20     |             |
-| elw_ko_barrier      | 조기종료발생기준가격 | String       | Y        | 112    |             |
-| apprch_rate         | 접근도               | String       | Y        | 112    |             |
-| unas_shrn_iscd      | 기초자산단축종목코드 | String       | Y        | 9      |             |
-| mtrt_date           | 만기일자             | String       | Y        | 8      |             |
-| prmm_val            | 프리미엄값           | String       | Y        | 114    |             |
-| stck_lp_fin_date    | 주식LP종료일자       | String       | Y        | 8      |             |
-| tick_conv_prc       | 틱환산가             | String       | Y        | 11     |             |
-| prls_qryr_stpr_prc  | 손익분기주가가격     | String       | Y        | 112    |             |
-| lp_hvol             | LP보유량             | String       | Y        | 18     |             |
+| Element                     | 한글명               | Type         | Required | Length | Description |
+| --------------------------- | -------------------- | ------------ | -------- | ------ | ----------- |
+| rt_cd                       | 성공 실패 여부       | String       | Y        | 1      |             |
+| msg_cd                      | 응답코드             | String       | Y        | 8      |             |
+| msg1                        | 응답메세지           | String       | Y        | 80     |             |
+| output1                     | 응답상세             | Object Array | Y        |        | array       |
+| output1.bond_shrn_iscd      | 채권단축종목코드     | String       | Y        | 9      |             |
+| output1.hts_kor_isnm        | HTS한글종목명        | String       | Y        | 40     |             |
+| output1.rght_type_name      | 권리유형명           | String       | Y        | 40     |             |
+| output1.elw_prpr            | ELW현재가            | String       | Y        | 10     |             |
+| output1.prdy_vrss           | 전일대비             | String       | Y        | 10     |             |
+| output1.prdy_vrss_sign      | 전일대비부호         | String       | Y        | 1      |             |
+| output1.prdy_ctrt           | 전일대비율           | String       | Y        | 82     |             |
+| output1.acml_vol            | 누적거래량           | String       | Y        | 18     |             |
+| output1.acpr                | 행사가               | String       | Y        | 112    |             |
+| output1.stck_cnvr_rate      | 주식전환비율         | String       | Y        | 136    |             |
+| output1.stck_lstn_date      | 주식상장일자         | String       | Y        | 8      |             |
+| output1.stck_last_tr_date   | 주식최종거래일자     | String       | Y        | 8      |             |
+| output1.hts_rmnn_dynu       | HTS잔존일수          | String       | Y        | 5      |             |
+| output1.unas_isnm           | 기초자산종목명       | String       | Y        | 40     |             |
+| output1.unas_prpr           | 기초자산현재가       | String       | Y        | 112    |             |
+| output1.unas_prdy_vrss      | 기초자산전일대비     | String       | Y        | 112    |             |
+| output1.unas_prdy_vrss_sign | 기초자산전일대비부호 | String       | Y        | 1      |             |
+| output1.unas_prdy_ctrt      | 기초자산전일대비율   | String       | Y        | 82     |             |
+| output1.unas_acml_vol       | 기초자산누적거래량   | String       | Y        | 18     |             |
+| output1.moneyness           | MONEYNESS            | String       | Y        | 132    |             |
+| output1.atm_cls_name        | ATM구분명            | String       | Y        | 10     |             |
+| output1.prit                | 패리티               | String       | Y        | 112    |             |
+| output1.delta_val           | 델타값               | String       | Y        | 114    |             |
+| output1.hts_ints_vltl       | HTS내재변동성        | String       | Y        | 114    |             |
+| output1.tmvl_val            | 시간가치값           | String       | Y        | 132    |             |
+| output1.gear                | 기어링               | String       | Y        | 84     |             |
+| output1.lvrg_val            | 레버리지값           | String       | Y        | 114    |             |
+| output1.prls_qryr_rate      | 손익분기비율         | String       | Y        | 84     |             |
+| output1.cfp                 | 자본지지점           | String       | Y        | 112    |             |
+| output1.lstn_stcn           | 상장주수             | String       | Y        | 18     |             |
+| output1.pblc_co_name        | 발행회사명           | String       | Y        | 40     |             |
+| output1.lp_mbcr_name        | LP회원사명           | String       | Y        | 50     |             |
+| output1.lp_hldn_rate        | LP보유비율           | String       | Y        | 84     |             |
+| output1.elw_rght_form       | ELW권리형태          | String       | Y        | 20     |             |
+| output1.elw_ko_barrier      | 조기종료발생기준가격 | String       | Y        | 112    |             |
+| output1.apprch_rate         | 접근도               | String       | Y        | 112    |             |
+| output1.unas_shrn_iscd      | 기초자산단축종목코드 | String       | Y        | 9      |             |
+| output1.mtrt_date           | 만기일자             | String       | Y        | 8      |             |
+| output1.prmm_val            | 프리미엄값           | String       | Y        | 114    |             |
+| output1.stck_lp_fin_date    | 주식LP종료일자       | String       | Y        | 8      |             |
+| output1.tick_conv_prc       | 틱환산가             | String       | Y        | 11     |             |
+| output1.prls_qryr_stpr_prc  | 손익분기주가가격     | String       | Y        | 112    |             |
+| output1.lp_hvol             | LP보유량             | String       | Y        | 18     |             |
