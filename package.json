@@ -9,13 +9,15 @@
   "type": "module",
   "scripts": {
     "build": "tsc --include src",
-    "generate:docs": "tsx scripts/generate-docs.ts",
+    "generate:json": "tsx scripts/generate-json.ts",
+    "generate:docs": "rimraf .cache && tsx scripts/generate-docs.ts",
     "typecheck": "tsc --noEmit"
   },
   "devDependencies": {
     "@types/node": "^24.10.13",
     "cheerio": "^1.2.0",
     "prettier": "^3.8.1",
+    "rimraf": "^6.1.3",
     "tsx": "^4.21.0",
     "typescript": "^5.9.3"
   }
