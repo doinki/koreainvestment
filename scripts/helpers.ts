@@ -1,3 +1,14 @@
+import fs from 'node:fs/promises';
+import path from 'node:path';
+
+import type { Service } from './fetch-services';
+
+export async function getServices(): Promise<Service[]> {
+  return JSON.parse(
+    await fs.readFile(path.join(import.meta.dirname, '..', '.cache', 'services.json'), 'utf8'),
+  ) as Service[];
+}
+
 export async function excute<T, U>(
   concurrencyLimit: number,
   items: T[],
@@ -26,7 +37,7 @@ export async function excute<T, U>(
 }
 
 export function normalize(name: string): string {
-  return name.trim().replace(/\//g, '_');
+  return name.trim().replace(/\s+/g, '_').replace(/\//g, '-');
 }
 
 export function sanitize(text: string): string {

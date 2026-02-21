@@ -9,8 +9,8 @@
   "type": "module",
   "scripts": {
     "build": "tsc --include src",
-    "generate:json": "tsx scripts/generate-json.ts",
-    "generate:docs": "rimraf .cache && tsx scripts/generate-docs.ts",
+    "generate:json": "rimraf .cache && tsx scripts/generate-json.ts",
+    "generate:docs": "rimraf docs && tsx scripts/generate-docs.ts",
     "typecheck": "tsc --noEmit"
   },
   "devDependencies": {

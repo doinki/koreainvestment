@@ -3,8 +3,8 @@ import path from 'node:path';
 
 import * as prettier from 'prettier';
 
-import { generateJson, Service } from './generate-json';
-import { normalize, sanitize } from './helpers';
+import type { Service } from './fetch-services';
+import { getServices, normalize, sanitize } from './helpers';
 
 const DOCUMENTATION_DIRECTORY = path.join(import.meta.dirname, '..', 'docs');
 
@@ -17,7 +17,7 @@ const DATA_TYPE_MAP = {
 } satisfies Record<Service['apiPropertys'][number]['propertyType'], string>;
 
 try {
-  const services = await generateJson();
+  const services = await getServices();
 
   await Promise.all(
     services.map((service) =>
